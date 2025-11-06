@@ -20,6 +20,7 @@ export default function CreateReviewScreen() {
       return;
     }
 
+    console.log("Token que se está enviando al crear la reseña:", authToken);
     fetch(`${API_URL}/api/reseñas`, {
       method: 'POST',
       headers: {
